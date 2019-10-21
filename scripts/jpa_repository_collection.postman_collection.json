@@ -1,0 +1,199 @@
+{
+	"variables": [],
+	"info": {
+		"name": "jpa_repository_collection",
+		"_postman_id": "f5aa097c-65a9-a6de-7854-85e4708407ef",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "save_cities_1",
+			"request": {
+				"url": "http://localhost:8080/api/v1/cities1",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Maringá\",\n\t\"state\": \"PR\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "save_employees_1",
+			"request": {
+				"url": "http://localhost:8080/api/v1/employees1",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Sabrina\",\n\t\"lastName\": \"Riguetto Marcelino\",\n\t\"emailAddress\": \"sabrikita@gmail.com\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "save_employees_2",
+			"request": {
+				"url": "http://localhost:8080/api/v1/employees2",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Renan\",\n\t\"lastName\": \"Viana Marcelino\",\n\t\"emailAddress\": \"renanqb@gmail.com\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "list_cities_1",
+			"request": {
+				"url": "http://localhost:8080/api/v1/cities1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "list_cities_2",
+			"request": {
+				"url": "http://localhost:8080/api/v1/cities2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "list_employees_1",
+			"request": {
+				"url": "http://localhost:8080/api/v1/employees1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "list_employees_2",
+			"request": {
+				"url": "http://localhost:8080/api/v1/employees2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update1",
+			"request": {
+				"url": "http://localhost:8080/api/v1/employees1/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Sabrina\",\n\t\"lastName\": \"Riguetto Marcelino\",\n\t\"emailAddress\": \"sabrikita@gmail.com\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update2",
+			"request": {
+				"url": "http://localhost:8080/api/v1/employees2/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"Renan\",\n\t\"lastName\": \"Viana Marcelino\",\n\t\"emailAddress\": \"renan.marcelino@gmail.com\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete1",
+			"request": {
+				"url": "http://localhost:8080/api/v1/employees1/8",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete2",
+			"request": {
+				"url": "http://localhost:8080/api/v1/employees2/8",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "performance_test_native_jpa",
+			"request": {
+				"url": "http://localhost:8080/api/v1/performancejpa/1000",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "performance_test_dageneric",
+			"request": {
+				"url": "http://localhost:8080/api/v1/performanceda/1000",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
